@@ -46,7 +46,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 32);
+            this.label1.Location = new System.Drawing.Point(63, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 0;
@@ -54,14 +54,14 @@
             // 
             // txtbx_num1
             // 
-            this.txtbx_num1.Location = new System.Drawing.Point(105, 29);
+            this.txtbx_num1.Location = new System.Drawing.Point(112, 29);
             this.txtbx_num1.Name = "txtbx_num1";
             this.txtbx_num1.Size = new System.Drawing.Size(193, 20);
             this.txtbx_num1.TabIndex = 1;
             // 
             // txtbx_num2
             // 
-            this.txtbx_num2.Location = new System.Drawing.Point(105, 55);
+            this.txtbx_num2.Location = new System.Drawing.Point(112, 55);
             this.txtbx_num2.Name = "txtbx_num2";
             this.txtbx_num2.Size = new System.Drawing.Size(193, 20);
             this.txtbx_num2.TabIndex = 3;
@@ -69,7 +69,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(56, 58);
+            this.label2.Location = new System.Drawing.Point(63, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             // btn_suma
             // 
-            this.btn_suma.Location = new System.Drawing.Point(24, 94);
+            this.btn_suma.Location = new System.Drawing.Point(31, 94);
             this.btn_suma.Name = "btn_suma";
             this.btn_suma.Size = new System.Drawing.Size(75, 23);
             this.btn_suma.TabIndex = 4;
@@ -87,7 +87,7 @@
             // 
             // btn_resta
             // 
-            this.btn_resta.Location = new System.Drawing.Point(105, 94);
+            this.btn_resta.Location = new System.Drawing.Point(112, 94);
             this.btn_resta.Name = "btn_resta";
             this.btn_resta.Size = new System.Drawing.Size(75, 23);
             this.btn_resta.TabIndex = 5;
@@ -97,7 +97,7 @@
             // 
             // btn_multiplicacion
             // 
-            this.btn_multiplicacion.Location = new System.Drawing.Point(186, 94);
+            this.btn_multiplicacion.Location = new System.Drawing.Point(193, 94);
             this.btn_multiplicacion.Name = "btn_multiplicacion";
             this.btn_multiplicacion.Size = new System.Drawing.Size(75, 23);
             this.btn_multiplicacion.TabIndex = 6;
@@ -107,7 +107,7 @@
             // 
             // btn_division
             // 
-            this.btn_division.Location = new System.Drawing.Point(267, 94);
+            this.btn_division.Location = new System.Drawing.Point(274, 94);
             this.btn_division.Name = "btn_division";
             this.btn_division.Size = new System.Drawing.Size(75, 23);
             this.btn_division.TabIndex = 7;
@@ -117,16 +117,16 @@
             // 
             // txtbx_resultado
             // 
-            this.txtbx_resultado.Location = new System.Drawing.Point(168, 160);
+            this.txtbx_resultado.Location = new System.Drawing.Point(112, 160);
             this.txtbx_resultado.Name = "txtbx_resultado";
             this.txtbx_resultado.ReadOnly = true;
-            this.txtbx_resultado.Size = new System.Drawing.Size(93, 20);
+            this.txtbx_resultado.Size = new System.Drawing.Size(193, 20);
             this.txtbx_resultado.TabIndex = 8;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(77, 163);
+            this.label3.Location = new System.Drawing.Point(21, 163);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 13);
             this.label3.TabIndex = 9;
@@ -134,7 +134,7 @@
             // 
             // btn_Raiz
             // 
-            this.btn_Raiz.Location = new System.Drawing.Point(105, 123);
+            this.btn_Raiz.Location = new System.Drawing.Point(112, 123);
             this.btn_Raiz.Name = "btn_Raiz";
             this.btn_Raiz.Size = new System.Drawing.Size(75, 23);
             this.btn_Raiz.TabIndex = 10;
@@ -144,7 +144,7 @@
             // 
             // btn_potencia
             // 
-            this.btn_potencia.Location = new System.Drawing.Point(186, 123);
+            this.btn_potencia.Location = new System.Drawing.Point(193, 123);
             this.btn_potencia.Name = "btn_potencia";
             this.btn_potencia.Size = new System.Drawing.Size(75, 23);
             this.btn_potencia.TabIndex = 11;
@@ -155,7 +155,7 @@
             // ckbx_RootMode
             // 
             this.ckbx_RootMode.AutoSize = true;
-            this.ckbx_RootMode.Location = new System.Drawing.Point(305, 57);
+            this.ckbx_RootMode.Location = new System.Drawing.Point(312, 57);
             this.ckbx_RootMode.Name = "ckbx_RootMode";
             this.ckbx_RootMode.Size = new System.Drawing.Size(49, 17);
             this.ckbx_RootMode.TabIndex = 13;
