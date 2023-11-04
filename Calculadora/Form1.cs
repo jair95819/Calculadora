@@ -119,11 +119,13 @@ namespace Calculadora
             if (check)
             {
                 txtbx_num2.ReadOnly = false;
+                txtbx_num2.Clear();
                 check = false;
             }
             else
             {
                 txtbx_num2.ReadOnly = true;
+                txtbx_num2.Clear();
                 check = true;
             }
         }
@@ -137,7 +139,7 @@ namespace Calculadora
                 num1 = Convert.ToInt32(txtbx_num1.Text);
                 num2 = Convert.ToInt32(txtbx_num2.Text);
                 double result_power = funciones.Power(num1, num2);
-                txtbx_resultado.Text = result_power.ToString();
+                txtbx_resultado.Text = result_power.ToString("N4");
             }
             catch (Exception ex)
             {
