@@ -14,6 +14,7 @@ namespace Calculadora
     {
         Funciones funciones = new Funciones();
         int num1, num2, result;
+        bool check;
 
         public Form1()
         {
@@ -96,5 +97,53 @@ namespace Calculadora
                 MessageBox.Show($"No has ingresado valores!\nInformación del error: {ex.Message}", "Error");
             }
         }
+
+        private void btn_Raiz_Click(object sender, EventArgs e)
+        {
+            txtbx_resultado.Clear();
+
+            try
+            {
+                num1 = Convert.ToInt32(txtbx_num1.Text);
+                double result_root = funciones.Root(num1);
+                txtbx_resultado.Text = result_root.ToString("N4");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"No has ingresado valores!\nInformación del error: {ex.Message}", "Error");
+            }
+        }
+
+        private void ckbx_RootMode_CheckedChanged(object sender, EventArgs e)
+        {
+            if (check)
+            {
+                txtbx_num2.ReadOnly = false;
+                check = false;
+            }
+            else
+            {
+                txtbx_num2.ReadOnly = true;
+                check = true;
+            }
+        }
+
+        private void btn_potencia_Click(object sender, EventArgs e)
+        {
+            txtbx_resultado.Clear();
+
+            try
+            {
+                num1 = Convert.ToInt32(txtbx_num1.Text);
+                num2 = Convert.ToInt32(txtbx_num2.Text);
+                double result_power = funciones.Power(num1, num2);
+                txtbx_resultado.Text = result_power.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"No has ingresado valores!\nInformación del error: {ex.Message}", "Error");
+            }
+        }
+
     }
 }
