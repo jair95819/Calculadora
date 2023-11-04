@@ -38,12 +38,15 @@
             this.btn_division = new System.Windows.Forms.Button();
             this.txtbx_resultado = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btn_Raiz = new System.Windows.Forms.Button();
+            this.btn_potencia = new System.Windows.Forms.Button();
+            this.ckbx_RootMode = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 35);
+            this.label1.Location = new System.Drawing.Point(56, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 0;
@@ -51,14 +54,14 @@
             // 
             // txtbx_num1
             // 
-            this.txtbx_num1.Location = new System.Drawing.Point(117, 32);
+            this.txtbx_num1.Location = new System.Drawing.Point(105, 29);
             this.txtbx_num1.Name = "txtbx_num1";
             this.txtbx_num1.Size = new System.Drawing.Size(193, 20);
             this.txtbx_num1.TabIndex = 1;
             // 
             // txtbx_num2
             // 
-            this.txtbx_num2.Location = new System.Drawing.Point(117, 58);
+            this.txtbx_num2.Location = new System.Drawing.Point(105, 55);
             this.txtbx_num2.Name = "txtbx_num2";
             this.txtbx_num2.Size = new System.Drawing.Size(193, 20);
             this.txtbx_num2.TabIndex = 3;
@@ -66,7 +69,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(68, 61);
+            this.label2.Location = new System.Drawing.Point(56, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 2;
@@ -74,7 +77,7 @@
             // 
             // btn_suma
             // 
-            this.btn_suma.Location = new System.Drawing.Point(36, 97);
+            this.btn_suma.Location = new System.Drawing.Point(24, 94);
             this.btn_suma.Name = "btn_suma";
             this.btn_suma.Size = new System.Drawing.Size(75, 23);
             this.btn_suma.TabIndex = 4;
@@ -84,7 +87,7 @@
             // 
             // btn_resta
             // 
-            this.btn_resta.Location = new System.Drawing.Point(117, 97);
+            this.btn_resta.Location = new System.Drawing.Point(105, 94);
             this.btn_resta.Name = "btn_resta";
             this.btn_resta.Size = new System.Drawing.Size(75, 23);
             this.btn_resta.TabIndex = 5;
@@ -94,7 +97,7 @@
             // 
             // btn_multiplicacion
             // 
-            this.btn_multiplicacion.Location = new System.Drawing.Point(198, 97);
+            this.btn_multiplicacion.Location = new System.Drawing.Point(186, 94);
             this.btn_multiplicacion.Name = "btn_multiplicacion";
             this.btn_multiplicacion.Size = new System.Drawing.Size(75, 23);
             this.btn_multiplicacion.TabIndex = 6;
@@ -104,7 +107,7 @@
             // 
             // btn_division
             // 
-            this.btn_division.Location = new System.Drawing.Point(279, 97);
+            this.btn_division.Location = new System.Drawing.Point(267, 94);
             this.btn_division.Name = "btn_division";
             this.btn_division.Size = new System.Drawing.Size(75, 23);
             this.btn_division.TabIndex = 7;
@@ -114,7 +117,7 @@
             // 
             // txtbx_resultado
             // 
-            this.txtbx_resultado.Location = new System.Drawing.Point(180, 150);
+            this.txtbx_resultado.Location = new System.Drawing.Point(168, 160);
             this.txtbx_resultado.Name = "txtbx_resultado";
             this.txtbx_resultado.ReadOnly = true;
             this.txtbx_resultado.Size = new System.Drawing.Size(93, 20);
@@ -123,17 +126,51 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(89, 153);
+            this.label3.Location = new System.Drawing.Point(77, 163);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Último resultado:";
+            // 
+            // btn_Raiz
+            // 
+            this.btn_Raiz.Location = new System.Drawing.Point(105, 123);
+            this.btn_Raiz.Name = "btn_Raiz";
+            this.btn_Raiz.Size = new System.Drawing.Size(75, 23);
+            this.btn_Raiz.TabIndex = 10;
+            this.btn_Raiz.Text = "Raíz ";
+            this.btn_Raiz.UseVisualStyleBackColor = true;
+            this.btn_Raiz.Click += new System.EventHandler(this.btn_Raiz_Click);
+            // 
+            // btn_potencia
+            // 
+            this.btn_potencia.Location = new System.Drawing.Point(186, 123);
+            this.btn_potencia.Name = "btn_potencia";
+            this.btn_potencia.Size = new System.Drawing.Size(75, 23);
+            this.btn_potencia.TabIndex = 11;
+            this.btn_potencia.Text = "Potencia";
+            this.btn_potencia.UseVisualStyleBackColor = true;
+            this.btn_potencia.Click += new System.EventHandler(this.btn_potencia_Click);
+            // 
+            // ckbx_RootMode
+            // 
+            this.ckbx_RootMode.AutoSize = true;
+            this.ckbx_RootMode.Location = new System.Drawing.Point(305, 57);
+            this.ckbx_RootMode.Name = "ckbx_RootMode";
+            this.ckbx_RootMode.Size = new System.Drawing.Size(49, 17);
+            this.ckbx_RootMode.TabIndex = 13;
+            this.ckbx_RootMode.Text = "Raíz";
+            this.ckbx_RootMode.UseVisualStyleBackColor = true;
+            this.ckbx_RootMode.CheckedChanged += new System.EventHandler(this.ckbx_RootMode_CheckedChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 211);
+            this.Controls.Add(this.ckbx_RootMode);
+            this.Controls.Add(this.btn_potencia);
+            this.Controls.Add(this.btn_Raiz);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtbx_resultado);
             this.Controls.Add(this.btn_division);
@@ -164,6 +201,9 @@
         private System.Windows.Forms.Button btn_division;
         private System.Windows.Forms.TextBox txtbx_resultado;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btn_Raiz;
+        private System.Windows.Forms.Button btn_potencia;
+        private System.Windows.Forms.CheckBox ckbx_RootMode;
     }
 }
 
