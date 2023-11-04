@@ -30,7 +30,7 @@ namespace Calculadora
 
             if(num2 == 0)
             {
-                //Returns -1 'cause you can't divide any number by 0
+                //Returns -1 'cause you can't divide any number by 0.
                 return -1;
             }
             else
